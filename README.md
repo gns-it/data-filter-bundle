@@ -14,6 +14,19 @@ Gns_filter:
     default_operator: # string (default like) Defines default operator when absent.
     default_order_direction: # enum (ASC,DESC) (default ASC) Defines default order direction when absent.
 ```
+**Web documentation**
+
+```$xslt
+Include below gonfig in your dev rotes
+
+gns_data_filter_doc:
+  resource: "@GnsFilterBundle/Controller"
+  prefix: /gns
+
+https://hostname:port/gns/data-filter
+```
+
+
 **Collection filters usage**
 ```$xslt
 {
